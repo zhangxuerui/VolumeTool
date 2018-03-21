@@ -1,6 +1,7 @@
 package com.zxr;
 
 import javax.swing.*;
+import java.awt.*;
 
 /**
  * 音量控制器主面板
@@ -20,6 +21,10 @@ public class VolumePanel {
         jFrame.setSize(VolumeConstant.APP_WIDTH, VolumeConstant.APP_HEIGHT);
         jFrame.setVisible(panelVisible);
         jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        FlowLayout flowLayout = new FlowLayout(FlowLayout.LEFT);
+        jFrame.setLayout(flowLayout);
+
 
     }
 
